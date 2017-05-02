@@ -6,18 +6,26 @@ class App extends Component {
     constructor() {
         super();
         this.surveyJson = {
-            pages: [
-                {
-                    name: "page1",
-                    questions: [
-                        {
-                            type: "text",
-                            name: "age",
-                            title: "enter age"
-                        }
-                    ]
-                }
-            ]
+           pages:[
+              {
+                 questions:[
+                    {
+                       type:"rating",
+                       name:"satisfaction",
+                       title:"How satisfied are you with the Product?",
+                       mininumRateDescription:"Not Satisfied",
+                       maximumRateDescription:"Completely satisfied"
+                    },
+                    {
+                       type:"rating",
+                       name:"satisfaction",
+                       title:"How satisfied are you with the Product?",
+                       mininumRateDescription:"Not Satisfied",
+                       maximumRateDescription:"Completely satisfied"
+                    }
+                 ]
+              }
+           ]
         }
     }
 
